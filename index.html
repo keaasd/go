@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/icon.svg">
+    <title>Document</title>
+    <style>
+        /* label {display: block;} */
+        
+        
+    </style>
+</head>
+<body>
+    <img src="img/logo.svg" alt="GameOver" width="120px"> 
+
+    <h2>Меню</h2>
+
+    <ul>
+        <li><a href="#hole"> Залы </a> </li>
+        <li><a href="#about">О нас</a> </li>
+        <li><a href="#book">Бронь</a> </li>
+        <li><a href="#reviews">Отзывы</a> </li>
+        <li><a href="#contacts">Контакты</a> </li>
+    </ul>
+    <h2>У нас есть всё для классного отдыха с друзьями!</h2>
+        <ul>            
+            <li> 
+                <figure><img src="img/vr.png" alt="VR очки" height="228px">
+                    <figcaption>VR очки</figcaption>  
+                </figure>
+            </li>
+            <li> 
+                <figure><img src="img/audio.png" alt="Аудио-система 5.1 с отличным звуком" height="228px">
+                    <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+                </figure>
+            </li>                 
+            <li>
+                <figure><img src="img/micro.png" alt="Караоке" height="228px">
+                    <figcaption>Караоке (4 микрофона)</figcaption>
+                </figure>
+            </li>                
+            <li>
+                <figure><img src="img/game.png" alt="Настольные игры" height="228px">
+                    <figcaption>Настольные игры</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure><img src="img/netflix.png" alt="Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko" height="228px">
+                    <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure><img src="img/sony.png" alt="PlayStation 5" height="228px">
+                    <figcaption>PlayStation 5</figcaption>
+                </figure>
+            </li>
+        </ul>
+
+    <h2 id="hole">Наши залы</h2>
+        <ol>
+            <li>80`s vibes</li>
+            <li>Stars wars</li>
+            <li>Wild west</li>
+            <li>Neon style</li>
+        </ol>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h2 id="book">Забронировать</h2>
+        
+        <fieldset><!-- первая рамка -->
+            <fieldset>Выбрать зал
+                <select>
+                    <option value="first">80`s vibes</option>
+                    <option value="second">Stars wars</option>
+                    <option value="third">Wild west</option>
+                    <option value="fourth">Neon style</option>
+                </select>                
+            </fieldset>
+            <fieldset>     <!-- рамка ------------------------------------------- -->                           
+                <fieldset>
+                    <legend>Собери набор развлечений</legend> <!-- текст на рамке--------------------------- -->
+                    <label>
+                        <input type="radio" name="games">PlayStation 5
+                    </label>
+                    <label>
+                        <input type="radio" name="games">Sega Mega Drive
+                    </label>
+                    <label>
+                        <input type="radio" name="games">X-box One S
+                    </label>
+                    <label>
+                        <input type="radio" name="games">Dendy
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Настольные игры</legend> 
+                    <!-- почему-то все отмечаются -->
+                    <label>
+                        <input type="checkbox" name="Jenga">Jenga
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Monopoly">Monopoly
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Manchkin">Манчкин
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Alias">Alias
+                    </label>
+                </fieldset>  
+                <fieldset>
+                    <legend>Дополнительно</legend>
+                    <label>
+                        <input type="checkbox" name="Karaoke">Караоке
+                    </label>
+                    <label>
+                        <input type="checkbox" name="VR">VR(Очки виртуальной реальности)
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Выберите дату и время</legend>
+                    Дата* <input type="date" name="data" id="" required>
+                        
+                    Время*<input type="time" name="time" required>
+                    <br>
+                    <br>
+                    Количество человек*<input type="number" name="mans" required>
+                    <br>
+                    <br>
+                    Имя*<input type="text" name="names" required>
+                    <br>
+                    <br>
+                    Фамилия*<input type="text" name="sonames" required>
+                    <br>
+                    <br>
+                    Номер телефона*<input type="text" name="tel" required>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="age" id=""> Я старше 18 лет
+                </fieldset>   
+                <br>                     
+                <button type="submit">Забронировать</button>
+                <input type="checkbox" name="checkbox" id="checkbox2">
+                <label for="checkbox2">Согласен на обработку персональных данных</label> 
+            </fieldset>            
+        </fieldset>
+    </form>
+    git remote add origin https://github.com/keaasd/go.git
+    git branch -M main
+    git push -u origin main
+    
+    <h2 id="about">О нас</h2>
+    <p>Для наших гостей мы создали <i> концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
+    
+    <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+
+    <blockquote> 
+        <b>GAME OVER</b>  - это место незабываемых впечатлений.
+	</blockquote> 
+    
+    <cite><p>Аркадий Абашкин, создатель игровой территории GAME OVER</p></cite>
+
+    <h2 id="reviews">Отзывы посетителей</h2>
+            
+        <figure>
+                <img src="img/otz1.jpg" alt="Макс Самойлов" height="125px">
+                <figcaption>Макс Самойлов</figcaption>                 
+                <p>Отмечали здесь день рождения с компанией друзей, всё было очень круто! VR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении. Сервис на высоте!</p>            
+        </figure>            
+        <figure>      
+                <img src="img/otz2.jpg" alt="Оксана Григорьева" height="125px">        
+                <figcaption>Оксана Григорьева</figcaption> 
+                <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+        </figure>
+        <figure>           
+            <img src="img/otz3.jpg" alt="Никита Ященко" height="125px">        
+            <figcaption>Никита Ященко</figcaption> 
+            <p>Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+        </figure>
+    
+    <h2 id="contacts">Контакты</h2>
+    <p>г. Москва ул. Аквамарина, 16</p>
+    <p><a href="tel:+79509302893">8(950)930-28-93</a> </p>
+    <p><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+    
+
+    <ul>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://vk.com/">Vkontakte</a></li>
+        <li><a href="https://ru-ru.facebook.com/">Facebook</a></li>
+        <li><a href="https://telegram.org/">Telegram</a></li>
+    </ul>
+
+<form action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <fieldset>
+    <h2>Заказать звонок</h2>
+    
+    <label for="name">Имя</label> 
+        <br>
+    <input type="text" name="name" id="name" placeholder="Ваше имя" required> 
+        <br>
+        <br>
+    <label for="soname">Фамилия</label>
+        <br>
+    <input type="text" name="soname" id="soname" placeholder="Ваша фамилия" required> 
+        <br>
+        <br>
+    <label for="tel">Номер телефона</label>
+        <br>
+        <input type="tel" name="tel" id="tel" placeholder="+7 911 111 1111" required>
+        <br>
+        <br>          
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+        <label for="checkbox">Согласен на обработку персональных данных</label> 
+        <br>
+        <br>
+    <button type="submit">Перезвоните мне</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
